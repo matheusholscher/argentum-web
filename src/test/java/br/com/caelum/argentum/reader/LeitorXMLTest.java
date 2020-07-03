@@ -13,6 +13,7 @@ public class LeitorXMLTest {
 
     @Test
     public void testLeitorDeXMlCarregaListaDeNegocio() {
+
         String xmlDeTeste = 
         		"<list>" 
         		+ "    <negociacao>" 
