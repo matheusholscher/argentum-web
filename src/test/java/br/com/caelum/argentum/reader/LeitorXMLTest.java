@@ -13,6 +13,10 @@ public class LeitorXMLTest {
 
     @Test
     public void testLeitorDeXMlCarregaListaDeNegocio() {
+        
+        mapper = buildMapperDynamically("com.thoughtworks.xstream.mapper.LambdaMapper", 
+        new Class[]{Mapper.class}, new Object[]{mapper});
+        
         String xmlDeTeste = 
         		"<list>" 
         		+ "    <negociacao>" 
